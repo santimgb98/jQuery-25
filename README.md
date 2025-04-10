@@ -4,15 +4,13 @@
 
 ## 📋 Descripción del Proyecto
 
-Este proyecto es una guía visual interactiva que muestra los conceptos fundamentales de jQuery, la popular biblioteca de JavaScript. Está diseñado como recurso educativo para estudiantes y desarrolladores que quieran aprender jQuery de forma práctica.
+Este proyecto es una guía interactiva que muestra los conceptos fundamentales de jQuery, la popular biblioteca de JavaScript. Está diseñado como recurso educativo para estudiantes y desarrolladores que quieran aprender jQuery de forma práctica.
 
 ## 🚀 Características Principales
 
-El proyecto demuestra visualmente cinco conceptos clave de jQuery:
+El proyecto demuestra cinco conceptos clave de jQuery:
 
 ### 1. Selectores
-
-![Selectores jQuery](img/selectores.png)
 
 - Selección por clase
 - Selección por ID
@@ -20,15 +18,11 @@ El proyecto demuestra visualmente cinco conceptos clave de jQuery:
 
 ### 2. Eventos
 
-![Eventos jQuery](img/eventos.png)
-
 - Eventos de ratón (click, hover)
 - Eventos de teclado
 - Manejo de interacciones de usuario
 
 ### 3. Manipulación del DOM
-
-![Manipulación DOM](img/manipulacion.png)
 
 - Cambiar texto y contenido
 - Agregar y quitar clases
@@ -37,15 +31,11 @@ El proyecto demuestra visualmente cinco conceptos clave de jQuery:
 
 ### 4. Animaciones
 
-![Animaciones jQuery](img/animaciones.png)
-
 - Efectos de desvanecimiento (fade)
 - Efectos de deslizamiento (slide)
 - Animaciones personalizadas
 
 ### 5. AJAX
-
-![AJAX jQuery](img/ajax.png)
 
 - Cargar datos desde archivos externos
 - Procesamiento de datos JSON
@@ -62,9 +52,9 @@ El proyecto demuestra visualmente cinco conceptos clave de jQuery:
 
 La aplicación está diseñada para funcionar en dispositivos de diferentes tamaños:
 
-|           Desktop           |          Tablet           |          Mobile           |
-| :-------------------------: | :-----------------------: | :-----------------------: |
-| ![Desktop](img/desktop.png) | ![Tablet](img/tablet.png) | ![Mobile](img/mobile.png) |
+- **Desktop**: Vista completa con todas las funcionalidades
+- **Tablet**: Adaptación de layouts y componentes
+- **Mobile**: Diseño optimizado para pantallas pequeñas
 
 ## 📄 Estructura del Proyecto
 
@@ -76,7 +66,7 @@ ejemploJQuery/
 ├── js/
 │   └── script.js       # Código jQuery
 ├── datos.json          # Datos de ejemplo para AJAX
-└── img/                # Imágenes para documentación
+└── img/                # Directorio para imágenes
 ```
 
 ## 🔧 Instalación y Uso
@@ -93,7 +83,7 @@ git clone https://github.com/tu-usuario/ejemploJQuery.git
 
 ## 📚 Datos de Muestra
 
-El proyecto utiliza un archivo JSON con datos de ejemplo para las demostraciones de AJAX:
+El proyecto utiliza datos de ejemplo para las demostraciones de AJAX:
 
 ```json
 {
@@ -101,43 +91,38 @@ El proyecto utiliza un archivo JSON con datos de ejemplo para las demostraciones
     {
       "nombre": "María García",
       "edad": 28,
-      "rol": "Administrador",
-      "email": "maria@ejemplo.com"
+      "rol": "Administrador"
     },
     {
       "nombre": "Juan Pérez",
       "edad": 32,
-      "rol": "Editor",
-      "email": "juan@ejemplo.com"
+      "rol": "Editor"
+    },
+    {
+      "nombre": "Ana Martínez",
+      "edad": 25,
+      "rol": "Usuario"
     }
-    // ...más usuarios
-  ],
-  "configuracion": {
-    "idioma": "es",
-    "tema": "claro",
-    "notificaciones": true
-  }
+  ]
 }
 ```
 
-## 🤝 Contribuir
+## 💡 Guía Rápida de Funcionalidades
 
-Si deseas contribuir a este proyecto, por favor:
+1. **Selectores**: Haz clic en los botones para ver cómo jQuery selecciona elementos por clase, ID o tipo.
 
-1. Haz un fork del repositorio
-2. Crea una rama para tu funcionalidad: `git checkout -b nueva-funcionalidad`
-3. Haz commit de tus cambios: `git commit -m 'Añadir nueva funcionalidad'`
-4. Envía tus cambios: `git push origin nueva-funcionalidad`
-5. Abre un Pull Request
+2. **Eventos**: Pasa el ratón sobre el cuadro azul, haz clic en él o escribe en el campo de texto para ver distintos eventos.
 
-## 📜 Licencia
+3. **Manipulación**: Prueba los botones para cambiar texto, añadir/quitar clases, agregar elementos o mostrar/ocultar contenido.
 
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+4. **Animaciones**: Usa los botones para probar efectos de desvanecimiento, deslizamiento y animaciones personalizadas.
+
+5. **AJAX**: Carga datos simulados al hacer clic en "Cargar datos".
 
 ## ✉️ Contacto
 
 Para cualquier consulta sobre este proyecto educativo, por favor contacta a:
-profesor@ejemplo.com
+ejemplo@email.com
 
 ---
 
