@@ -1,0 +1,274 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+:root {
+  --color-primary: #3a7bd5;
+  --color-primary-light: #6fa1ff;
+  --color-primary-dark: #2a5db2;
+  --color-secondary: #ff6b6b;
+  --color-dark: #2d3436;
+  --color-light: #f7f7f7;
+  --color-white: #ffffff;
+  --color-gray: #a0a0a0;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --transition: all 0.3s ease;
+  --radius: 8px;
+
+  /* Tamaño de fuente base para facilitar cálculos rem */
+  font-size: 16px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+body {
+  background-color: #f5f8fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 1.25rem 0;
+  width: 100%;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1.25rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  width: 100%;
+}
+
+header p {
+  max-width: 38rem;
+  margin: 0 auto;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+main {
+  max-width: 62.5rem;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Estilos para listas */
+ul,
+ol {
+  padding-left: 2.5rem;
+  margin: 1rem 0;
+  list-style-position: outside;
+}
+
+li {
+  margin-bottom: 0.3rem;
+  padding-left: 0.3rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1.25rem;
+  color: #777;
+  border-top: 1px solid #ddd;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 0.6rem;
+  font-size: 2rem;
+}
+
+h2 {
+  color: #2980b9;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #eee;
+  font-size: 1.5rem;
+}
+
+/* Secciones y ejemplos */
+.seccion {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.ejemplo {
+  margin-top: 1.25rem;
+  width: 100%;
+}
+
+.elementos-ejemplo {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 1.25rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+/* Botones */
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos para los ejemplos específicos */
+#unico {
+  background-color: #fff4e5;
+  padding: 1rem;
+  border-left: 4px solid #ff9800;
+}
+
+.especial {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.cuadro {
+  width: 100%;
+  max-width: 12.5rem;
+  height: 6.25rem;
+  background-color: #e1f5fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1.25rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#cuadro-eventos:hover {
+  background-color: #b3e5fc;
+}
+
+input[type="text"] {
+  padding: 0.6rem;
+  width: 100%;
+  max-width: 18.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0.6rem 0;
+  font-size: 1rem;
+}
+
+.resultado-evento {
+  background-color: #e8f5e9;
+  padding: 1rem;
+  border-radius: 5px;
+  border-left: 4px solid #4caf50;
+  width: 100%;
+}
+
+#contenido-manipulable {
+  padding: 1rem;
+  background-color: #e3f2fd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.destacado {
+  background-color: #fffde7 !important;
+  border: 2px solid #ffd600;
+  font-weight: bold;
+}
+
+#resultado-ajax {
+  background-color: #f3e5f5;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  min-height: 6.25rem;
+  width: 100%;
+}
+
+/* Animaciones */
+@keyframes pulso {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulso {
+  animation: pulso 1s ease;
+}
+
+/* Media queries para hacer el diseño responsive */
+@media (max-width: 768px) {
+  .botones {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  .seccion {
+    padding: 1.25rem;
+  }
+
+  .cuadro {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 100%;
+    padding: 0 0.75rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+}

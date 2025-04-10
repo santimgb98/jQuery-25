@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos básicos de jQuery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Importamos jQuery desde CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Ejemplos básicos de jQuery</h1>
+        <p>Un proyecto para aprender las funcionalidades más importantes</p>
+    </header>
+
+    <main>
+        <section class="seccion" id="selectores">
+            <h2>1. Selectores</h2>
+            <div class="ejemplo">
+                <p>Haz clic en los botones para ver diferentes selectores en acción</p>
+                <div class="elementos-ejemplo">
+                    <p class="especial">Este es un párrafo con clase 'especial'</p>
+                    <p>Este es un párrafo normal</p>
+                    <div id="unico">Este es un div con id 'unico'</div>
+                    <ul>
+                        <li>Elemento de lista 1</li>
+                        <li class="especial">Elemento de lista 2 (especial)</li>
+                        <li>Elemento de lista 3</li>
+                    </ul>
+                </div>
+                <div class="botones">
+                    <button id="btn-selector-clase">Seleccionar por clase</button>
+                    <button id="btn-selector-id">Seleccionar por ID</button>
+                    <button id="btn-selector-elemento">Seleccionar todos los párrafos</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="eventos">
+            <h2>2. Eventos</h2>
+            <div class="ejemplo">
+                <p>Interactúa con estos elementos para ver los eventos en acción</p>
+                <div class="elementos-ejemplo">
+                    <div id="cuadro-eventos" class="cuadro">
+                        Pasa el mouse por encima<br>
+                        o haz clic aquí
+                    </div>
+                    <input type="text" id="campo-texto" placeholder="Escribe algo aquí">
+                </div>
+                <div class="resultado-evento">
+                    <p>Resultado: <span id="resultado-evento-texto">Ningún evento detectado</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="manipulacion">
+            <h2>3. Manipulación del DOM</h2>
+            <div class="ejemplo">
+                <div class="elementos-ejemplo">
+                    <div id="contenido-manipulable">
+                        Este es un contenido que podemos manipular con jQuery
+                    </div>
+                </div>
+                <div class="botones">
+                    <button id="btn-cambiar-texto">Cambiar texto</button>
+                    <button id="btn-agregar-clase">Agregar/quitar clase</button>
+                    <button id="btn-agregar-elemento">Agregar elemento</button>
+                    <button id="btn-ocultar-mostrar">Ocultar/mostrar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="animaciones">
+            <h2>4. Animaciones</h2>
+            <div class="ejemplo">
+                <div class="elementos-ejemplo">
+                    <div id="elemento-animado" class="cuadro">
+                        Elemento animable
+                    </div>
+                </div>
+                <div class="botones">
+                    <button id="btn-fadeout">Fade Out</button>
+                    <button id="btn-fadein">Fade In</button>
+                    <button id="btn-slide">Slide Toggle</button>
+                    <button id="btn-animar">Animar CSS</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="ajax">
+            <h2>5. AJAX</h2>
+            <div class="ejemplo">
+                <p>Solicita datos de un archivo JSON de ejemplo:</p>
+                <div class="botones">
+                    <button id="btn-cargar-datos">Cargar datos</button>
+                </div>
+                <div id="resultado-ajax">
+                    <p>Los datos aparecerán aquí...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ejemplo creado para explicar funciones básicas de jQuery - 2025</p>
+    </footer>
+
+    <!-- Importamos nuestro archivo JavaScript con jQuery -->
+    <script src="js/script.js"></script>
+</body>
+</html>
