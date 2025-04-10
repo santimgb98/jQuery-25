@@ -91,20 +91,35 @@ El proyecto utiliza datos de ejemplo para las demostraciones de AJAX:
     {
       "nombre": "María García",
       "edad": 28,
-      "rol": "Administrador"
+      "rol": "Administrador",
+      "email": "maria@ejemplo.com"
     },
     {
       "nombre": "Juan Pérez",
       "edad": 32,
-      "rol": "Editor"
+      "rol": "Editor",
+      "email": "juan@ejemplo.com"
     },
     {
       "nombre": "Ana Martínez",
       "edad": 25,
-      "rol": "Usuario"
+      "rol": "Usuario",
+      "email": "ana@ejemplo.com"
+    },
+    {
+      "nombre": "Carlos Rodríguez",
+      "edad": 41,
+      "rol": "Administrador",
+      "email": "carlos@ejemplo.com"
     }
-  ]
+  ],
+  "configuracion": {
+    "idioma": "es",
+    "tema": "claro",
+    "notificaciones": true
+  }
 }
+
 ```
 
 ## 💡 Guía Rápida de Funcionalidades
